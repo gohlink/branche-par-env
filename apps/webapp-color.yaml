@@ -1,0 +1,23 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: webapp-color
+  namespace: argocd
+spec:
+  destination:
+    namespace: default
+    server: https://kubernetes.default.svc
+  project: default
+  source:
+    chart: webapp-color
+    repoURL: https://marcusjava.github.io/helm-charts-repo/
+    targetRevision: 0.1.1
+    helm:
+      values: |
+        replicaCount: 1
+        app:
+          color: red  # red,green,blue,blue2,pink,darkblue
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
