@@ -12,13 +12,13 @@ spec:
     chart: webapp-color
     repoURL: https://marcusjava.github.io/helm-charts-repo/
     targetRevision: 0.1.1
-    # helm:
-    #   values: |
-    #     replicaCount: 1
-    #     app:
-    #       color: red  # red,green,blue,blue2,pink,darkblue
-      # valueFiles:
-      #   - values.yaml
+    helm:
+      # values: |
+      #   replicaCount: 1
+      #   app:
+      #     color: red  # red,green,blue,blue2,pink,darkblue
+      valueFiles:
+        - values.yaml
   syncPolicy:
     automated:
       prune: true
