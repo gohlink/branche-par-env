@@ -18,7 +18,7 @@ spec:
       #   app:
       #     color: red  # red,green,blue,blue2,pink,darkblue
       valueFiles:
-        - values.yaml
+        - apps/webapp-color/values.yaml
   syncPolicy:
     automated:
       prune: true
