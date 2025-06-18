@@ -1,7 +1,7 @@
 # Paramètres métier spécifiques à l'environnement
 app:
-  color: pink  # red,green,blue,blue2,pink,darkblue
+  color: red  # red,green,blue,blue2,pink,darkblue
 
   # exemples fictifs :
-  stripeApiToken: 1230941232452
-  externalDatabaseHost: picsel-postgres.my-domain.com
+  stripeApiToken: 8768793659235
+  externalDatabaseHost: hors-prod-postgres.my-domain.com
